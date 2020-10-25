@@ -1,7 +1,10 @@
 import '../styles/index.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export interface Props {
+  Component: React.ElementType;
+  pageProps: unknown;
 }
+
+const MyApp: React.FC<Props> = ({ Component, pageProps }) => <Component {...pageProps} />
 
 export default MyApp
