@@ -1,10 +1,11 @@
+import * as React from 'react'
+import { AppContext } from 'next/app'
 import '../styles/index.css'
 
-export interface Props {
-  Component: React.ElementType;
-  pageProps: unknown;
+export interface Context extends AppContext {
+  pageProps: any
 }
 
-const MyApp: React.FC<Props> = ({ Component, pageProps }) => <Component {...pageProps} />
+const MyApp: React.FC<Context> = ({ Component, pageProps }) => <Component {...pageProps} />
 
 export default MyApp

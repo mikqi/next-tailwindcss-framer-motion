@@ -1,9 +1,7 @@
 import { motion } from 'framer-motion'
 
 const Home: React.FC = () => (
-  <div
-    className="flex items-center justify-center min-h-screen overflow-hidden bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"
-  >
+  <div className="flex items-center justify-center min-h-screen overflow-hidden bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
     <motion.div
       className="bg-white dark:bg-black h-40 w-40"
       animate={{
