@@ -5,8 +5,10 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'airbnb',
-    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'prettier/@typescript-eslint',
+    'prettier/react',
+    'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -21,10 +23,7 @@ module.exports = {
       version: 'detect',
     },
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-  ],
+  plugins: ['react', 'prettier'],
   rules: {
     semi: ['error', 'never'],
     'react/jsx-filename-extension': [0],
