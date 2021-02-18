@@ -23,7 +23,7 @@ module.exports = {
       version: 'detect',
     },
   },
-  plugins: ['react', 'prettier'],
+  plugins: ['react', 'prettier', '@typescript-eslint'],
   rules: {
     semi: ['error', 'never'],
     'react/jsx-filename-extension': [0],
