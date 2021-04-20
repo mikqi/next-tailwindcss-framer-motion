@@ -1,8 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js with Essentials Dependencies
+
+## What included?
+- [Typescript](https://typescript.org/)
+- [TailwindCSS](https://tailwindcss.com)
+- [ESLint](https://eslint.org)
+- [Prettier](https://prettier.io)
+- [Husky](https://typicode.github.io/husky/)
+- [Storybook](https://storybook.js.org)
+- [Framer Motion](https://www.framer.com/motion/)
+- GitHub Actions
+- VSCode Config
 
 ## Getting Started
 
-First, run the development server:
+First, clone this repo and then run `npm install` or `yarn` after that run the development server:
 
 ```bash
 npm run dev
