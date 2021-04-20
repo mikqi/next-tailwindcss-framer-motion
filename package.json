@@ -9,7 +9,9 @@
     "type-check": "tsc",
     "lint": "eslint \"*/**/*.{js,ts,tsx}\" --quiet --fix",
     "lint:ci": "eslint \"*/**/*.{js,ts,tsx}\" --quiet && tsc",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "framer-motion": "^4.1.5",
@@ -18,10 +20,16 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@storybook/addon-actions": "^6.2.8",
+    "@storybook/addon-essentials": "^6.2.8",
+    "@storybook/addon-links": "^6.2.8",
+    "@storybook/react": "^6.2.8",
     "@types/node": "^14.14.2",
     "@types/react": "^17.0.3",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
+    "babel-loader": "^8.2.2",
     "eslint": "^7.24.0",
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-import": "^2.22.1",
