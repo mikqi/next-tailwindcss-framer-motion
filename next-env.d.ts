@@ -1,4 +1,3 @@
 /// <reference types="next" />
 /// <reference types="next/types/global" />
-
-declare module '*.module.css'
+/// <reference types="next/image-types/global" />
