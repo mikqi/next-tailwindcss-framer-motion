@@ -26,4 +26,4 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}
       - run: yarn install --frozen-lockfile
       - run: yarn lint:ci
-      - run: yarn build --if-present
+      - run: yarn build
