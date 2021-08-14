@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './button.module.css'
+import clsx from 'clsx'
 
 export interface ButtonProps {
   /**
@@ -13,7 +13,7 @@ export interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large'
+  size?: 'sm' | 'md' | 'lg'
   /**
    * Button contents
    */
@@ -24,25 +24,30 @@ export interface ButtonProps {
   onClick?: () => void
 }
 
+const buttonSize = {
+  sm: 'px-4 py-1 text-sm;',
+  md: 'px-5 py-2 text-sm',
+  lg: 'px-6 py-3 text-base',
+}
+
 /**
  * Primary UI component for user interaction
  */
 export const Button: React.FC<ButtonProps> = ({
   primary = false,
-  size = 'medium',
+  size = 'md',
   backgroundColor,
   label,
   children,
   ...props
 }) => {
-  const mode = primary ? styles['btn--primary'] : styles['btn--secondary']
+  const classes = clsx(
+    'inline-block font-sans font-bold leading-none rounded-lg cursor-pointer',
+    buttonSize[size],
+    primary ? 'text-white bg-blue-500' : 'text-blue-500 bg-transparent border border-blue-500'
+  )
   return (
-    <button
-      type="button"
-      className={[styles.btn, styles[`btn--${size}`], mode].join(' ')}
-      style={{ backgroundColor }}
-      {...props}
-    >
+    <button type="button" className={classes} style={{ backgroundColor }} {...props}>
       {label || children}
     </button>
   )
