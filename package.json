@@ -55,8 +55,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint --ext ts,tsx,js --fix --max-warnings=0",
-      "git add"
+      "eslint --ext ts,tsx,js --fix --max-warnings=0"
     ]
   },
   "simple-git-hooks": {
