@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import React from 'react'
+import * as React from 'react'
 
 export interface ButtonProps {
   /**
@@ -21,6 +21,7 @@ export interface ButtonProps {
 
   leftIcon?: React.FunctionComponent<React.ComponentProps<'svg'>>
   rightIcon?: React.FunctionComponent<React.ComponentProps<'svg'>>
+  children?: React.ReactNode
 }
 
 const buttonSize = {

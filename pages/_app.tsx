@@ -4,9 +4,9 @@ import * as React from 'react'
 import '../styles/index.css'
 
 export interface Context extends AppContext {
-  pageProps: never
+  pageProps: any
 }
 
-const MyApp: React.FC<Context> = ({ Component, pageProps }) => <Component {...pageProps} />
+const MyApp = ({ Component, pageProps }: Context) => <Component {...pageProps} />
 
 export default MyApp
