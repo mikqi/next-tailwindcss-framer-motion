@@ -42,6 +42,7 @@ specifiers:
   lint-staged: ^13.0.3
   next: ^13.0.1
   next-router-mock: ^0.7.4
+  next-sitemap: ^3.1.30
   postcss: ^8.4.18
   postcss-flexbugs-fixes: ^5.0.2
   postcss-preset-env: ^7.8.2
@@ -99,6 +100,7 @@ devDependencies:
   jest-watch-typeahead: 2.2.0_jest@29.2.2
   lint-staged: 13.0.3
   next-router-mock: 0.7.4_next@13.0.2+react@18.2.0
+  next-sitemap: 3.1.30_vgqyd6xszme3vbxjduhyhsztkm
   postcss: 8.4.18
   postcss-flexbugs-fixes: 5.0.2_postcss@8.4.18
   postcss-preset-env: 7.8.2_postcss@8.4.18
@@ -1573,6 +1575,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@corex/deepmerge/4.0.29:
+    resolution: {integrity: sha512-q/yVUnqckA8Do+EvAfpy7RLdumnBy9ZsducMUtZTvpdbJC7azEf1hGtnYYxm0QfphYxjwggv6XtH64prvS1W+A==}
+    dev: true
 
   /@csstools/postcss-cascade-layers/1.1.1_postcss@8.4.18:
     resolution: {integrity: sha512-+KdYrpKC5TgomQr2DlZF4lDEpHcoxnj5IGddYYfBWJAKfj1JtuHUIqMa+E1pJJ+z3kvDViWMqyqPlG4Ja7amQA==}
@@ -10230,6 +10236,20 @@ packages:
     dependencies:
       next: 13.0.2_qtpcxnaaarbm4ws7ughq6oxfve
       react: 18.2.0
+    dev: true
+
+  /next-sitemap/3.1.30_vgqyd6xszme3vbxjduhyhsztkm:
+    resolution: {integrity: sha512-mZqq9xWrTp/tgUM7+Oz/qxT6x2vnJhwQ3AGke2GjypRbUo44QaTb+4Cp1uX9GwXBaiuuuXDoWyS5VxJP3pJljw==}
+    engines: {node: '>=14.18'}
+    hasBin: true
+    peerDependencies:
+      '@next/env': '*'
+      next: '*'
+    dependencies:
+      '@corex/deepmerge': 4.0.29
+      '@next/env': 13.0.2
+      minimist: 1.2.7
+      next: 13.0.2_qtpcxnaaarbm4ws7ughq6oxfve
     dev: true
 
   /next/13.0.2_qtpcxnaaarbm4ws7ughq6oxfve:
