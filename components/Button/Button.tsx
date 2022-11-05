@@ -56,6 +56,7 @@ export const Button: React.FC<ButtonProps> = ({
     buttonSize[size],
     variants[variant]
   )
+
   return (
     <button type="button" className={classes} {...props}>
       {leftIcon &&
