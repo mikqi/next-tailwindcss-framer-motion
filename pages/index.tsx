@@ -1,25 +1,24 @@
-import { motion } from 'framer-motion'
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-const Home: React.FC = () => (
-  <div className="flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-    <motion.div
-      className="h-40 w-40 bg-white dark:bg-black"
-      animate={{
-        scale: [1, 2, 2, 1, 1],
-        rotate: [0, 0, 270, 270, 0],
-        borderRadius: ['20%', '20%', '50%', '50%', '20%'],
-      }}
-      transition={{
-        duration: 2,
-        ease: 'easeInOut',
-        times: [0, 0.2, 0.5, 0.8, 1],
-        loop: Infinity,
-        repeatDelay: 1,
-      }}
-    >
-      &nbsp;
-    </motion.div>
-  </div>
-)
+import { Button } from '@/components/Button/Button'
+
+const Home = () => {
+  const { t } = useTranslation('common')
+
+  return (
+    <div>
+      <Button>{t('welcome')}</Button>
+    </div>
+  )
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  }
+}
 
 export default Home
