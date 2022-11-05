@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app'
 import { appWithTranslation } from 'next-i18next'
-// import nextI18NextConfig from '../next-i18next.config.js'
+
+import '@/styles/index.css'
 
 const App = ({ Component, pageProps }: AppProps) => <Component {...pageProps} />
 
