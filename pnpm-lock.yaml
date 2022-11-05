@@ -19,6 +19,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.42.0
   '@typescript-eslint/parser': ^5.42.0
   autoprefixer: ^10.4.13
+  axe-core: ^4.5.1
   babel-loader: ^9.1.0
   clsx: ^1.2.1
   eslint: ^8.26.0
@@ -76,6 +77,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.42.0_6xw5wg2354iw4zujk2f3vyfrzu
   '@typescript-eslint/parser': 5.42.0_wyqvi574yv7oiwfeinomdzmc3m
   autoprefixer: 10.4.13_postcss@8.4.18
+  axe-core: 4.5.1
   babel-loader: 9.1.0_6zc4kxld457avlfyhj3lzsljlm
   eslint: 8.26.0
   eslint-config-next: 13.0.2_wyqvi574yv7oiwfeinomdzmc3m
