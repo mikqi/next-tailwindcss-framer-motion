@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
-import { render } from 'utils/test'
+import { render } from '@/utils/test'
 
 const createTestQueryClient = () =>
   new QueryClient({

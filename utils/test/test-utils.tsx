@@ -1,7 +1,6 @@
 import { RunOptions } from 'axe-core'
 import { axe, toHaveNoViolations } from 'jest-axe'
 import * as React from 'react'
-import '@testing-library/jest-dom/extend-expect'
 
 import {
   fireEvent,

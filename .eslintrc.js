@@ -2,6 +2,8 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true,
+    node: true,
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -25,6 +27,7 @@ module.exports = {
     'simple-import-sort',
     'unused-imports',
     'prettier',
+    'testing-library',
   ],
 
   settings: {
