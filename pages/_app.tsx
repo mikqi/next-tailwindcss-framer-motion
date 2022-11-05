@@ -1,14 +1,7 @@
-import { AppContext } from 'next/app'
-import * as React from 'react'
+import type { AppProps } from 'next/app'
+import { appWithTranslation } from 'next-i18next'
+// import nextI18NextConfig from '../next-i18next.config.js'
 
-import '../styles/index.css'
+const App = ({ Component, pageProps }: AppProps) => <Component {...pageProps} />
 
-export interface Context extends AppContext {
-  pageProps: any
-}
-
-const MyApp = ({ Component, pageProps }: Context) => (
-  <Component {...pageProps} />
-)
-
-export default MyApp
+export default appWithTranslation(App)
