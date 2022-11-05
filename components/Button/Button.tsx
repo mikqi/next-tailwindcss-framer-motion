@@ -56,18 +56,21 @@ export const Button: React.FC<ButtonProps> = ({
     buttonSize[size],
     variants[variant]
   )
+
   return (
     <button type="button" className={classes} {...props}>
       {leftIcon &&
         React.createElement(leftIcon, {
-          className: size === 'xs' ? '-ml-0.5 mr-2 h-4 w-4' : '-ml-1 mr-2 h-5 w-5',
+          className:
+            size === 'xs' ? '-ml-0.5 mr-2 h-4 w-4' : '-ml-1 mr-2 h-5 w-5',
         })}
 
       {label || children}
 
       {rightIcon &&
         React.createElement(rightIcon, {
-          className: size === 'xs' ? 'ml-2 -mr-0.5 h-4 w-4' : 'ml-2 -mr-1 h-5 w-5',
+          className:
+            size === 'xs' ? 'ml-2 -mr-0.5 h-4 w-4' : 'ml-2 -mr-1 h-5 w-5',
         })}
     </button>
   )

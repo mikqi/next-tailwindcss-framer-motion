@@ -2,6 +2,8 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true,
+    node: true,
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -25,6 +27,7 @@ module.exports = {
     'simple-import-sort',
     'unused-imports',
     'prettier',
+    'testing-library',
   ],
 
   settings: {
@@ -39,6 +42,7 @@ module.exports = {
     'react/jsx-props-no-spreading': [0],
     'react/prop-types': [0],
     '@typescript-eslint/no-explicit-any': [0],
+    '@typescript-eslint/no-var-requires': 'off',
 
     // Unused Import
     '@typescript-eslint/no-unused-vars': 'off',

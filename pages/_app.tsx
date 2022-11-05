@@ -7,6 +7,8 @@ export interface Context extends AppContext {
   pageProps: any
 }
 
-const MyApp = ({ Component, pageProps }: Context) => <Component {...pageProps} />
+const MyApp = ({ Component, pageProps }: Context) => (
+  <Component {...pageProps} />
+)
 
 export default MyApp
