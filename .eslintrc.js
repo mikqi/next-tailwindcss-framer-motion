@@ -68,17 +68,17 @@ module.exports = {
           ['^\\w', '^\\u0000'],
           ['^@?\\w', '^\\u0000'],
           // Lib, urils and hooks
-          ['^lib', '^hooks', '^utils', '^apis'],
+          ['^@/lib', '^@/hooks', '^@/utils', '^@/apis'],
           // app
-          ['^app'],
+          ['^@/app'],
           // components
-          ['^components', '^container'],
+          ['^@/components', '^@/container'],
           // zustand store
-          ['^store'],
+          ['^@/store'],
           // configs
-          ['^configs', '^locales'],
+          ['^@/configs', '^@/locales'],
           // static data
-          ['^data'],
+          ['^@/data'],
           // Other imports
           ['^/'],
           // relative paths up until 3 level

@@ -1,6 +1,6 @@
-import { Button } from './Button'
-
 import { render, screen, testA11y } from '@/utils/test'
+
+import { Button } from './Button'
 
 test('renders Button component', () => {
   render(<Button>Click me</Button>)
