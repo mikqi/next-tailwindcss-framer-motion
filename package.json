@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "biome check && next build",
     "start": "next start",
     "type-check": "tsc",
     "lint": "biome check",
