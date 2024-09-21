@@ -20,6 +20,7 @@ module.exports = {
     'prettier',
     'plugin:react/recommended',
     'plugin:prettier/recommended',
+    'plugin:storybook/recommended',
   ],
   plugins: [
     'react',
