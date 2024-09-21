@@ -2,11 +2,10 @@
   "editor.tabSize": 2,
   "editor.formatOnPaste": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
+    "source.fixAll.biome": "explicit",
     "source.fixAll": "explicit"
   },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
-  },
-  "eslint.validate": ["javascript", "javascriptreact", "vue"]
+  }
 }

@@ -106,7 +106,6 @@ export const testA11y = async (
 
   const results = await axe(container as any, axeOptions)
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   expect(results).toHaveNoViolations()
 }

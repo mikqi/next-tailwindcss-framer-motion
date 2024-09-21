@@ -3,8 +3,8 @@
 ## What included?
 - [Typescript](https://typescript.org/)
 - [TailwindCSS](https://tailwindcss.com)
-- [ESLint](https://eslint.org)
-- [Prettier](https://prettier.io)
+- [Biome](https://biomejs.dev)
+- [Vitest](https://vitest.dev)
 - [Husky](https://typicode.github.io/husky/)
 - [Storybook](https://storybook.js.org)
 - [Framer Motion](https://www.framer.com/motion/)
