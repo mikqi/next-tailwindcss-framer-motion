@@ -1,15 +1,14 @@
 import { RunOptions } from 'axe-core'
-import { axe, toHaveNoViolations } from 'jest-axe'
 import * as React from 'react'
+import { axe } from 'vitest-axe'
+import '@testing-library/jest-dom/vitest'
 
+import type { RenderOptions } from '@testing-library/react'
 import {
   fireEvent,
   render as rtlRender,
-  RenderOptions,
   RenderResult,
 } from '@testing-library/react'
-
-expect.extend(toHaveNoViolations)
 
 // type UI = Parameters<typeof rtlRender>[0]
 
@@ -110,9 +109,9 @@ export const testA11y = async (
     ? render(ui, options).container
     : ui
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-expect-error
-  const results = await axe(container, axeOptions)
+  const results = await axe(container as any, axeOptions)
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   expect(results).toHaveNoViolations()
 }
