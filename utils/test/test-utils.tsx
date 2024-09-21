@@ -1,13 +1,13 @@
-import { RunOptions } from 'axe-core'
+import type { RunOptions } from 'axe-core'
 import * as React from 'react'
 import { axe } from 'vitest-axe'
 import '@testing-library/jest-dom/vitest'
 
 import type { RenderOptions } from '@testing-library/react'
 import {
+  type RenderResult,
   fireEvent,
   render as rtlRender,
-  RenderResult,
 } from '@testing-library/react'
 
 // type UI = Parameters<typeof rtlRender>[0]
@@ -54,13 +54,7 @@ export interface TestOptions extends Omit<RenderOptions, 'wrapper'> {
 export const render = (
   ui,
   { wrapper: Wrapper = ChildrenPassthrough, ...options }: TestOptions = {}
-): RenderResult =>
-  rtlRender(
-    <>
-      <Wrapper>{ui}</Wrapper>
-    </>,
-    options
-  )
+): RenderResult => rtlRender(<Wrapper>{ui}</Wrapper>, options)
 
 export { rtlRender }
 export { axe }
@@ -73,6 +67,7 @@ export type {
 export { act as invoke, renderHook } from '@testing-library/react-hooks'
 export { default as userEvent } from '@testing-library/user-event'
 
+// biome-ignore lint/suspicious/noShadowRestrictedNames: <explanation>
 export const escape = (ui: HTMLElement) =>
   fireEvent.keyDown(ui, { key: 'Escape', keyCode: 27 })
 
