@@ -63,8 +63,8 @@ export * from '@testing-library/react'
 export type {
   RenderHookOptions,
   RenderHookResult,
-} from '@testing-library/react-hooks'
-export { act as invoke, renderHook } from '@testing-library/react-hooks'
+} from '@testing-library/react'
+export { act as invoke, renderHook } from '@testing-library/react'
 export { default as userEvent } from '@testing-library/user-event'
 
 // biome-ignore lint/suspicious/noShadowRestrictedNames: <explanation>
