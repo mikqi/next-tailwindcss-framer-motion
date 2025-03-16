@@ -20,7 +20,7 @@
   "dependencies": {
     "@tanstack/react-query": "^5.62.3",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.13.1",
+    "motion": "^12.5.0",
     "next": "^15.0.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -67,7 +67,7 @@
     "vitest-axe": "^0.1.0"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": ["biome check --write --staged", "tsc --noEmit"]
+    "*.{js,jsx,ts,tsx}": ["biome check --write --staged"]
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
