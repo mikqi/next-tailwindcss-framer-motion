@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-import { Button } from '@/components/Button/Button'
+import { Button } from '@/components/ui/button'
 
 const Home = () => {
   const { t } = useTranslation('common')
