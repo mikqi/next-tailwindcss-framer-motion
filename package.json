@@ -79,8 +79,5 @@
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
     "commit-msg": "npx --no-install commitlint --edit \"$1\""
-  },
-  "engines": {
-    "node": ">=18.0.0"
   }
 }
