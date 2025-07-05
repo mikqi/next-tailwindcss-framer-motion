@@ -1,6 +1,7 @@
 # Next.js with Essentials Dependencies
 
 ## What included?
+
 - [Typescript](https://typescript.org/)
 - [TailwindCSS](https://tailwindcss.com)
 - [Biome](https://biomejs.dev)

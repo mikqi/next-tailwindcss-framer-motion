@@ -2,10 +2,10 @@
   "editor.tabSize": 2,
   "editor.formatOnPaste": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.biome": "explicit",
-    "source.organizeImports.biome": "explicit",
-    "source.fixAll": "explicit"
+    "source.fixAll.oxc": "explicit",
+    "source.organizeImports": "explicit"
   },
+  "oxc.enable": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   }
