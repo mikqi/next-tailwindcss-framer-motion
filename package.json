@@ -39,6 +39,7 @@
     "@storybook/nextjs": "^8.6.6",
     "@storybook/react": "^8.6.6",
     "@storybook/test": "^8.6.6",
+    "@tailwindcss/postcss": "^4.1.11",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
@@ -60,13 +61,15 @@
     "postcss-preset-env": "^10.1.5",
     "simple-git-hooks": "^2.11.1",
     "storybook": "^8.6.6",
-    "tailwindcss": "^3.4.12",
+    "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3",
     "vitest": "^3.2.4",
     "vitest-axe": "^0.1.0"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": ["biome check --write --staged"]
+    "*.{js,jsx,ts,tsx}": [
+      "biome check --write --staged"
+    ]
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
