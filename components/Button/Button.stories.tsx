@@ -1,4 +1,4 @@
-import type { Meta, StoryFn } from '@storybook/react'
+import type { Meta, StoryFn } from '@storybook/nextjs'
 
 import { Button, type ButtonProps } from './Button'
 
