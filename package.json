@@ -67,9 +67,7 @@
     "vitest-axe": "^0.1.0"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "biome check --write --staged"
-    ]
+    "*.{js,jsx,ts,tsx}": ["biome check --write --staged"]
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
