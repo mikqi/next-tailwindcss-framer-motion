@@ -1,5 +1,4 @@
-import { vi } from 'vitest'
-import { expect } from 'vitest'
+import { expect, vi } from 'vitest'
 import * as matchers from 'vitest-axe/matchers'
 import '@testing-library/jest-dom'
 import 'vitest-axe/extend-expect'

@@ -1,6 +1,5 @@
-import type * as React from 'react'
-
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import type * as React from 'react'
 
 import { render } from '@/utils/test'
 

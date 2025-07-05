@@ -5,8 +5,8 @@ import '@testing-library/jest-dom/vitest'
 
 import type { RenderOptions } from '@testing-library/react'
 import {
-  type RenderResult,
   fireEvent,
+  type RenderResult,
   render as rtlRender,
 } from '@testing-library/react'
 
@@ -59,15 +59,15 @@ export const render = (
 export { rtlRender }
 export { axe }
 
-export * from '@testing-library/react'
 export type {
   RenderHookOptions,
   RenderHookResult,
 } from '@testing-library/react'
+export * from '@testing-library/react'
 export { act as invoke, renderHook } from '@testing-library/react'
 export { default as userEvent } from '@testing-library/user-event'
 
-// biome-ignore lint/suspicious/noShadowRestrictedNames: <explanation>
+// biome-ignore lint/suspicious/noShadowRestrictedNames: <false positive>
 export const escape = (ui: HTMLElement) =>
   fireEvent.keyDown(ui, { key: 'Escape', keyCode: 27 })
 
