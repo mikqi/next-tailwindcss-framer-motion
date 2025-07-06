@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "biome check && next build",
+    "build": "oxlint && next build",
     "start": "next start",
     "type-check": "tsc",
-    "lint": "biome check",
-    "lint:ci": "biome check --diagnostic-level=warn --no-errors-on-unmatched",
+    "lint": "oxlint",
+    "lint:ci": "oxlint --max-warnings=10 --no-errors-on-unmatched",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "coverage": "vitest run --coverage",
@@ -31,7 +31,6 @@
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.0.6",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@prettier/plugin-oxc": "^0.0.4",

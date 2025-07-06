@@ -4,7 +4,7 @@
 
 - [Typescript](https://typescript.org/)
 - [TailwindCSS](https://tailwindcss.com)
-- [Biome](https://biomejs.dev)
+- [Oxlint](https://oxc.rs/docs/guide/usage/linter.html)
 - [Vitest](https://vitest.dev)
 - [Husky](https://typicode.github.io/husky/)
 - [Storybook](https://storybook.js.org)

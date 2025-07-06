@@ -1,7 +1,7 @@
+import '@testing-library/jest-dom/vitest'
 import type { RunOptions } from 'axe-core'
 import * as React from 'react'
 import { axe } from 'vitest-axe'
-import '@testing-library/jest-dom/vitest'
 
 import type { RenderOptions } from '@testing-library/react'
 import {
@@ -56,18 +56,16 @@ export const render = (
   { wrapper: Wrapper = ChildrenPassthrough, ...options }: TestOptions = {}
 ): RenderResult => rtlRender(<Wrapper>{ui}</Wrapper>, options)
 
-export { rtlRender }
-export { axe }
+export { axe, rtlRender }
 
+export * from '@testing-library/react'
+export { act as invoke, renderHook } from '@testing-library/react'
 export type {
   RenderHookOptions,
   RenderHookResult,
 } from '@testing-library/react'
-export * from '@testing-library/react'
-export { act as invoke, renderHook } from '@testing-library/react'
 export { default as userEvent } from '@testing-library/user-event'
 
-// biome-ignore lint/suspicious/noShadowRestrictedNames: <false positive>
 export const escape = (ui: HTMLElement) =>
   fireEvent.keyDown(ui, { key: 'Escape', keyCode: 27 })
 
